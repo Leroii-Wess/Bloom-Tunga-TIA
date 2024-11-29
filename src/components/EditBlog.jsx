@@ -69,10 +69,10 @@ function EditBlog() {
         </h2>
       </div>
 
-      <div className="w-1/2 p-12 flex items-center justify-center">
+      <div className="w-full max-w-xl md:max-w-4xl lg:max-w-6xl p-4 sm:p-8 md:p-12 flex items-center justify-center">
         <form
           onSubmit={handleSubmit}
-          className="bg-white p-8 rounded-md shadow-md w-full space-y-6"
+          className="bg-white p-4 md:p-8 rounded-md shadow-md w-full space-y-6"
         >
           <div>
             <label
