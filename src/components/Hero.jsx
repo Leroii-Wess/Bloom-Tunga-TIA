@@ -1,11 +1,18 @@
 // import { hero } from "../assets/dark-flower.jpg";
+import bg from "../images/dark-flower.jpg";
 
 function Hero() {
   return (
     <div className="mt-36 m-32 h-[calc(100vh-90px)] overflow-hidden rounded-[30px]">
-      <div
-        className={`relative h-full w-full bg-cover bg-center bg-[url("src/assets/dark-flower.jpg")] `}
-      >
+      <div className={`relative h-full w-full bg-cover bg-center  `}>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${bg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "cover",
+          }}
+        ></div>
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           {/* Text Content */}

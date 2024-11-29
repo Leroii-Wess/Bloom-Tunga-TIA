@@ -5,6 +5,7 @@ import { validateEmail } from "../helpers/emailValidators";
 import URL from "../db/url";
 import { useNavigate } from "react-router-dom";
 import SpinnerMini from "../components/SpinnerMini";
+import bg from "../images/dark-flower.jpg";
 
 const loginUrl = "/api/v1/login";
 
@@ -50,9 +51,18 @@ const LoginPage = () => {
 
   return (
     <div className="relative flex items-center justify-center min-h-screen bg-blue-500">
-      <div
+      {/* <div
         className={`absolute inset-0 bg-cover bg-center  bg-[url("src/assets/dark-flower.jpg")]`}
+      ></div> */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "cover",
+        }}
       ></div>
+
       <div
         className={`z-10 p-20 rounded-2xl bg-[rgba(50,71,74,0.20)] border border-customSlate shadow-2xl backdrop-blur-[6.3px] w-full max-w-2xl flex flex-col gap-4`}
       >

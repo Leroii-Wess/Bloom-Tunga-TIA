@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar";
-import flower from "../assets/dark-flower.jpg";
+import flower from "../images/dark-flower.jpg";
 import { useNavigate } from "react-router-dom";
 import usePasswordToggle from "../hooks/usePasswordToggle";
 import { useFormik } from "formik";
