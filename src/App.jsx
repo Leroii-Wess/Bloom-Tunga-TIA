@@ -9,6 +9,7 @@ import BlogDetail from "./pages/BlogDetail";
 import ScrollToTop from "./components/ScrollToTop";
 import EditBlogPage from "./pages/EditBlogPage";
 import SignupPage from "./pages/SignupPage";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="login" element={<LoginPage />} />
             <Route index element={<Navigate to="login" />} />
             <Route path="sign-up" element={<SignupPage />} />
+            <Route path="signup" element={<SignUp />} />
             <Route path="home" element={<Home />} />
             <Route path="blogs" element={<BlogPage />} />
             <Route path="post-blog" element={<BlogPostPage />} />

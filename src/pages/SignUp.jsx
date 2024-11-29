@@ -1,30 +1,50 @@
-/* eslint-disable react/no-unescaped-entities */
 import usePasswordToggle from "../hooks/usePasswordToggle";
 import { useFormik } from "formik";
 import toast from "react-hot-toast";
 import { validateEmail } from "../helpers/emailValidators";
 import URL from "../db/url";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import SpinnerMini from "../components/SpinnerMini";
 import bg from "../images/dark-flower.jpg";
 
-const loginUrl = "/api/v1/login";
+// const loginUrl = "/api/v1/login";
 
-const LoginPage = () => {
+const signup = "/api/v1/register";
+
+const SignUp = () => {
   const [PasswordInputType, ToggleIcon] = usePasswordToggle();
   const navigate = useNavigate();
 
+  // const handleFormSubmit = async (values, actions) => {
+  //   try {
+  //     const res = await URL.post(loginUrl, {
+  //       email: values.email,
+  //       password: values.password,
+  //     });
+
+  //     console.log(res);
+
+  //     toast.success("Logged in Successfully, Welcome!");
+  //     navigate("/home");
+  //   } catch (error) {
+  //     console.log(error);
+  //     toast.error("Wrong credentials, confirm email and password");
+  //   } finally {
+  //     actions.resetForm();
+  //   }
+  // };
+
   const handleFormSubmit = async (values, actions) => {
     try {
-      const res = await URL.post(loginUrl, {
+      await URL.post(signup, {
         email: values.email,
         password: values.password,
       });
 
-      console.log(res);
+      // console.log(res);
 
-      toast.success("Logged in Successfully, Welcome!");
-      navigate("/home");
+      toast.success("Congrats, you can now login with your details!");
+      navigate("/login");
     } catch (error) {
       console.log(error);
       toast.error("Wrong credentials, confirm email and password");
@@ -68,10 +88,10 @@ const LoginPage = () => {
         className={`z-10 p-20 rounded-2xl bg-[rgba(50,71,74,0.20)] border border-customSlate shadow-2xl backdrop-blur-[6.3px] w-full max-w-2xl flex flex-col gap-4`}
       >
         <h2 className="text-5xl text-white font-bold mb-2 text-center">
-          Login to Bloom
+          Sign Up to Bloom
         </h2>
         <p className="text-white text-center text-xl mb-6">
-          Enter your username and password to continue
+          Enter your email and password to proceed
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col gap-10">
           <div>
@@ -135,20 +155,8 @@ const LoginPage = () => {
               disabled={isSubmitting}
               className="w-3/4 bg-customPink flex items-center justify-center text-white font-bold py-3 px-4 rounded-lg hover:bg-customPdark transition duration-300  mb-8"
             >
-              {isSubmitting ? <SpinnerMini /> : "Sign In"}
+              {isSubmitting ? <SpinnerMini /> : "Sign Up"}
             </button>
-
-            <div>
-              <p className="text-white text-xl">
-                Don't have an account?{" "}
-                <Link
-                  to="/signup"
-                  className="text-2xl text-pink-600 hover:underline cursor-pointer"
-                >
-                  Sign Up
-                </Link>
-              </p>
-            </div>
           </div>
         </form>
       </div>
@@ -156,4 +164,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default SignUp;
