@@ -1,0 +1,148 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "The Rise of Vue.js in Modern Development",
+      "author": "Jane Doe",
+      "publishedDate": "2024-11-15",
+      "content": "Vue.js has emerged as one of the most popular JavaScript frameworks in recent years. This article explores the reasons behind its success, from its ease of use to its powerful ecosystem, and provides insights into how developers can leverage Vue.js for their projects.is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "excerpt": "Discover why Vue.js has become a favorite among developers and how it shapes modern front-end development.",
+      "tags": [
+        "Vue.js",
+        "JavaScript",
+        "Web Development"
+      ],
+      "category": "Technology",
+      "image": "https://picsum.photos/300/200",
+      "readTime": "5 min",
+      "commentsCount": 34,
+      "likes": 120,
+      "authorDetails": {
+        "name": "Jane Doe",
+        "avatar": "https://example.com/avatars/jane.jpg",
+        "bio": "Jane is a front-end developer with over 10 years of experience in JavaScript frameworks.",
+        "socialLinks": {
+          "twitter": "@janedoe",
+          "linkedin": "https://linkedin.com/in/janedoe"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "title": "10 Tips for Writing Clean JavaScript Code",
+      "author": "John Smith",
+      "publishedDate": "2024-11-10",
+      "content": "Writing clean JavaScript code is essential for maintaining large-scale projects. This guide provides practical tips to enhance code readability, maintainability, and performance, making it easier for teams to collaborate effectively. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "excerpt": "Learn the best practices for writing clean and maintainable JavaScript code.",
+      "tags": [
+        "JavaScript",
+        "Best Practices",
+        "Programming"
+      ],
+      "category": "Development",
+      "image": "https://picsum.photos/300/200",
+      "readTime": "7 min",
+      "commentsCount": 12,
+      "likes": 80,
+      "authorDetails": {
+        "name": "John Smith",
+        "avatar": "https://example.com/avatars/john.jpg",
+        "bio": "John is a software engineer specializing in JavaScript and React.",
+        "socialLinks": {
+          "github": "https://github.com/johnsmith",
+          "twitter": "@johnsmith"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "title": "The Impact of AI on Web Development",
+      "author": "Emily Johnson",
+      "publishedDate": "2024-11-05",
+      "content": "Artificial intelligence is revolutionizing web development, from automating repetitive tasks to enhancing user experiences with personalized content. Explore how AI tools and frameworks are reshaping the industry. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "excerpt": "AI is changing the way we approach web development. Dive into its transformative impact.",
+      "tags": [
+        "AI",
+        "Web Development",
+        "Technology"
+      ],
+      "category": "Innovation",
+      "image": "https://picsum.photos/300/200",
+      "readTime": "8 min",
+      "commentsCount": 50,
+      "likes": 200,
+      "authorDetails": {
+        "name": "Emily Johnson",
+        "avatar": "https://example.com/avatars/emily.jpg",
+        "bio": "Emily is a tech writer and web developer with a passion for AI innovations.",
+        "socialLinks": {
+          "twitter": "@emilyjohnson",
+          "medium": "https://medium.com/@emilyjohnson"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "title": "Building a Responsive Design with Tailwind CSS",
+      "author": "Michael Lee",
+      "publishedDate": "2024-11-01",
+      "content": "Tailwind CSS has made building responsive designs easier than ever. This article walks you through creating a fully responsive layout using Tailwind's utility-first approach, with code examples and tips for optimization. is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "excerpt": "Master responsive design using Tailwind CSS in this comprehensive guide.",
+      "tags": [
+        "Tailwind CSS",
+        "Responsive Design",
+        "CSS"
+      ],
+      "category": "Design",
+      "image": "https://picsum.photos/300/200",
+      "readTime": "6 min",
+      "commentsCount": 22,
+      "likes": 150,
+      "authorDetails": {
+        "name": "Michael Lee",
+        "avatar": "https://example.com/avatars/michael.jpg",
+        "bio": "Michael is a UI/UX designer and front-end developer specializing in CSS frameworks.",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/michaellee",
+          "twitter": "@michaellee"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "title": "Getting Started with TypeScript in React",
+      "author": "Sophia Brown",
+      "publishedDate": "2024-10-28",
+      "content": "TypeScript has become a vital tool for building robust React applications. In this tutorial, you'll learn how to set up TypeScript in your React project, define types effectively, and ensure a smoother development experience. lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "excerpt": "Boost your React apps with TypeScript by following this beginner-friendly guide.",
+      "tags": [
+        "TypeScript",
+        "React",
+        "Front-End"
+      ],
+      "category": "Programming",
+      "image": "https://picsum.photos/300/200",
+      "readTime": "10 min",
+      "commentsCount": 40,
+      "likes": 220,
+      "authorDetails": {
+        "name": "Sophia Brown",
+        "avatar": "https://example.com/avatars/sophia.jpg",
+        "bio": "Sophia is a React developer and TypeScript advocate.",
+        "socialLinks": {
+          "github": "https://github.com/sophiabrown",
+          "twitter": "@sophiabrown"
+        }
+      }
+    },
+    {
+      "id": "df22346e-b890-49bf-b4c2-625d14e8f232",
+      "title": "The Blog",
+      "publishedDate": "2024-11-26",
+      "excerpt": "The Blog about Nothing",
+      "content": "lorem ipsum Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+      "readTime": "2 min",
+      "image": "https://picsum.photos/300/200?=df22346e-b890-49bf-b4c2-625d14e8f232"
+    }
+  ]
+}
