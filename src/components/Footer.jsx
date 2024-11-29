@@ -77,12 +77,6 @@ function Footer() {
         >
           Post Blog
         </Link>
-        <Link
-          to="/contact"
-          className="text-customSlate italic font-medium text-2xl sm:text-3xl md:text-3xl hover:font-bold transition-all duration-150"
-        >
-          Contact
-        </Link>
       </div>
     </div>
   );
