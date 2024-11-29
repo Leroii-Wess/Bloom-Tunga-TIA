@@ -29,7 +29,7 @@ function Blogs() {
   }, [setBlogs]);
 
   return (
-    <div className="my-48 py-16 bg-[#142F32]  w-3/4 mx-auto">
+    <div className="my-48 py-16 bg-[#142F32] w-11/12  lg:w-3/4 mx-auto">
       <div className="flex justify-between px-16 mb-10">
         <h2 className="text-lightGreen text-2xl lg:text-3xl">
           Recent Blog Posts

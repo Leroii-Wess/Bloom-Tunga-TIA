@@ -9,7 +9,7 @@ function BlogItem({ blog }) {
       key={blog.id}
       className="bg-customSlate rounded-md p-7 flex flex-col gap-7"
     >
-      <div>
+      <div className="flex items-center">
         <img src={`https://picsum.photos/300/200?${id}`} className="h-full " />
       </div>
       <div className="flex flex-col gap-5">
