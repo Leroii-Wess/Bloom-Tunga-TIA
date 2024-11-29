@@ -15,25 +15,6 @@ const SignUp = () => {
   const [PasswordInputType, ToggleIcon] = usePasswordToggle();
   const navigate = useNavigate();
 
-  // const handleFormSubmit = async (values, actions) => {
-  //   try {
-  //     const res = await URL.post(loginUrl, {
-  //       email: values.email,
-  //       password: values.password,
-  //     });
-
-  //     console.log(res);
-
-  //     toast.success("Logged in Successfully, Welcome!");
-  //     navigate("/home");
-  //   } catch (error) {
-  //     console.log(error);
-  //     toast.error("Wrong credentials, confirm email and password");
-  //   } finally {
-  //     actions.resetForm();
-  //   }
-  // };
-
   const handleFormSubmit = async (values, actions) => {
     try {
       await URL.post(signup, {

@@ -58,7 +58,7 @@ function BlogDetail() {
   return (
     <div>
       <NavBar />
-      <div className="grid grid-cols-[2.5fr_0.5fr]  justify-center  w-full ">
+      <div className="grid lg:grid-cols-[2.5fr_0.5fr]  justify-center  w-full ">
         {isLoading ? (
           <Spinner />
         ) : (
