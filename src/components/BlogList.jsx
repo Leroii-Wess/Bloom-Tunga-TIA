@@ -18,7 +18,6 @@ function Blogs() {
         const res = await URL.get(POSTS_URL);
         console.log(res);
         setBlogs(res.data);
-        // localStorage.setItem("blogs", JSON.stringify(res.data));
       } catch (error) {
         console.log(error);
       } finally {
@@ -32,14 +31,19 @@ function Blogs() {
   return (
     <div className="my-48 py-16 bg-[#142F32]  w-3/4 mx-auto">
       <div className="flex justify-between px-16 mb-10">
-        <h2 className="text-lightGreen text-3xl">Recent Blog Posts</h2>
+        <h2 className="text-lightGreen text-2xl lg:text-3xl">
+          Recent Blog Posts
+        </h2>
 
-        <Link to="/blogs" className="text-lightGreen text-2xl hover:underline">
+        <Link
+          to="/blogs"
+          className="text-lightGreen text-2xl lg:text-2xl hover:underline"
+        >
           See all blogs &rarr;
         </Link>
       </div>
 
-      <div className="grid grid-cols-3 gap-10  mx-auto px-16">
+      <div className="grid lg:grid-cols-3  gap-10  mx-auto px-16">
         {isLoading ? (
           <Spinner />
         ) : (
