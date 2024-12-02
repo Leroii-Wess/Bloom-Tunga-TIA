@@ -9,15 +9,7 @@ function BlogProvider({ children }) {
   const [blogs, setBlogs] = useState([]);
   const [currentBlog, setCurrentBlog] = useState({});
 
-  // () => {
-  //   const storedBlogs = localStorage.getItem("blogs");
-  //   if (!storedBlogs) return [];
-  //   return JSON.parse(storedBlogs);
-  // }
 
-  // useEffect(() => {
-
-  // }, [blogs])
 
   // Creating Blog State:
   const [formData, setFormData] = useState({

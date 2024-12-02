@@ -8,7 +8,7 @@ const ScrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth", // Enables smooth scrolling
-    }); // Scrolls to the top of the page
+    });
   }, [pathname]); // Runs every time the pathname changes
 
   return null;

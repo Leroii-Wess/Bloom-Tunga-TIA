@@ -19,7 +19,10 @@ function BlogItem({ blog }) {
       </div>
 
       <div className="mt-auto">
-        <Link className="bg-lightGreen text-customSlateDark px-4 py-2 rounded-full transition-all duration-300 hover:bg-lightGreenDark">
+        <Link
+          to={`/blogs/${blog.id}`}
+          className="bg-lightGreen text-customSlateDark px-4 py-2 rounded-full transition-all duration-300 hover:bg-lightGreenDark"
+        >
           Read more
         </Link>
       </div>
