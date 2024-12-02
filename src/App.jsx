@@ -10,6 +10,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import EditBlogPage from "./pages/EditBlogPage";
 import SignupPage from "./pages/SignupPage";
 import SignUp from "./pages/SignUp";
+import Layout from "./components/Layout";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
@@ -22,17 +24,55 @@ function App() {
           }}
         >
           <ScrollToTop />
-          <Routes>
-            <Route path="login" element={<LoginPage />} />
-            <Route index element={<Navigate to="login" />} />
-            <Route path="sign-up" element={<SignupPage />} />
-            <Route path="signup" element={<SignUp />} />
-            <Route path="home" element={<Home />} />
-            <Route path="blogs" element={<BlogPage />} />
-            <Route path="post-blog" element={<BlogPostPage />} />
-            <Route path="blogs/:id" element={<BlogDetail />} />
-            <Route path="blogs/edit/:id" element={<EditBlogPage />} />
-          </Routes>
+          <Layout>
+            <Routes>
+              <Route path="login" element={<LoginPage />} />
+              <Route index element={<Navigate to="login" />} />
+              <Route path="sign-up" element={<SignupPage />} />
+              <Route path="signup" element={<SignUp />} />
+
+              <Route
+                path="home"
+                element={
+                  <ProtectedRoute>
+                    <Home />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="blogs"
+                element={
+                  <ProtectedRoute>
+                    <BlogPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="post-blog"
+                element={
+                  <ProtectedRoute>
+                    <BlogPostPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="blogs/:id"
+                element={
+                  <ProtectedRoute>
+                    <BlogDetail />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="blogs/edit/:id"
+                element={
+                  <ProtectedRoute>
+                    <EditBlogPage />
+                  </ProtectedRoute>
+                }
+              />
+            </Routes>
+          </Layout>
         </BrowserRouter>
       </BlogProvider>
 

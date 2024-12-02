@@ -4,6 +4,7 @@ import { formatDateTime } from "../helpers/helperFunctions";
 /* eslint-disable react/prop-types */
 function BlogItem({ blog }) {
   const { title, created_at: createdAt, content, id } = blog;
+
   return (
     <div
       key={blog.id}

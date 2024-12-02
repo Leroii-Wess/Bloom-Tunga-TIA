@@ -22,6 +22,7 @@ const LoginPage = () => {
       });
 
       console.log(res);
+      localStorage.setItem("token", res.data.token);
 
       toast.success("Logged in Successfully, Welcome!");
       navigate("/home");

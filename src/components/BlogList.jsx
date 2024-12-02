@@ -16,7 +16,7 @@ function Blogs() {
       try {
         setIsLoading(true);
         const res = await URL.get(POSTS_URL);
-        console.log(res);
+
         setBlogs(res.data);
       } catch (error) {
         console.log(error);
