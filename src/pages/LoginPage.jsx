@@ -51,7 +51,7 @@ const LoginPage = () => {
   });
 
   return (
-    <div className="relative flex items-center justify-center min-h-screen bg-blue-500">
+    <div className="relative flex items-center justify-center min-h-screen">
       {/* <div
         className={`absolute inset-0 bg-cover bg-center  bg-[url("src/assets/dark-flower.jpg")]`}
       ></div> */}
